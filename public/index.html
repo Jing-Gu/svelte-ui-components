@@ -3,18 +3,63 @@
 <head>
 	<meta charset='utf-8'>
 	<meta name='viewport' content='width=device-width,initial-scale=1'>
-
 	<title>Svelte UI components</title>
-
 	<link rel='icon' type='image/png' href='/favicon.png'>
-
+	<link rel='stylesheet' href='./global.css'>
 	<script defer src='/build/car-bundle.js'></script>
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 </head>
 
 <body>
 	<h1>Svelte UI Playground</h1>
-	<car-btn count="29"  color="primary"></car-btn>
-	<car-btn count="19"  color="secondary"></car-btn>
+	<!-- Buttons -->
+	<car-button color="primary-blue">
+		primary button
+	</car-button>
+
+	<car-button color="primary-blue">
+		Trailing icon
+		<span>&nbsp;</span>
+		<i data-feather="arrow-right-circle"></i>
+	</car-button>
+
+	<car-button color="primary-yellow">secondary button</car-button>
+
+	<car-button color="disabled">
+		Disabled
+	</car-button>
+
+	<car-button color="secondary-blue">
+		Secondary button
+	</car-button>
+
+	<car-button color="secondary-yellow">
+		Secondary button
+	</car-button>
+
+	<car-button color="tertiary">
+		Tertiary button
+	</car-button>
+
+	<car-button color="primary-blue" size="small">
+		<span>primary small</span>
+	</car-button>
+
+	<car-button color="primary-blue" format="icon-round">
+		<i data-feather="edit"></i>
+	</car-button>
+
+	<car-button color="primary-yellow" size="small" format="icon-round">
+		<i data-feather="edit"></i>
+	</car-button>
+
+	<hr>
+
+
 	<car-banner></car-banner>
+
+	<script>
+		feather.replace()
+	</script>
 </body>
 </html>

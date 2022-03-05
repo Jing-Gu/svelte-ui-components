@@ -1,5 +1,4 @@
 html, body {
-	position: relative;
 	width: 100%;
 	height: 100%;
 }
@@ -12,52 +11,66 @@ body {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
-a {
-	color: rgb(0,100,200);
-	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
-a:visited {
-	color: rgb(0,80,160);
-}
-
-label {
-	display: block;
-}
-
-input, button, select, textarea {
-	font-family: inherit;
-	font-size: inherit;
-	-webkit-padding: 0.4em 0;
-	padding: 0.4em;
-	margin: 0 0 0.5em 0;
-	box-sizing: border-box;
-	border: 1px solid #ccc;
-	border-radius: 2px;
-}
-
-input:disabled {
-	color: #ccc;
-}
-
+input,
 button {
-	color: #333;
-	background-color: #f4f4f4;
-	outline: none;
+  font: inherit;
 }
 
-button:disabled {
-	color: #999;
+
+:root {
+	/* parmary */
+  --blue-100: #CAFDFA;
+  --blue-300: #62E9F5;
+  --blue-500: #00ACDE;
+  --blue-700: #00649F;
+  --blue-900: #00336A;
+
+  /* secondary */
+  --yellow-100: #FFF8CC;
+  --yellow-300: #FFE566;
+  --yellow-500: #FFC900;
+  --yellow-700: #B78800;
+  --yellow-900: #936A00;
+
+  /* success */
+  --green-100: #CAFCDB;
+  --green-300: #60F1AE;
+  --green-500: #00D199;
+  --green-700: #00968B;
+  --green-900: #005864;
+
+	/* error */
+  --red-100: #FDCED4;
+  --red-300: #F86E99;
+  --red-500: #E8117F;
+  --red-700: #A70879;
+  --red-900: #6F0365;
+
+  /* neutral grey */
+  --neutral-50: #F6F6F6;
+  --neutral-100: #E0E0E0;
+  --neutral-300: #C2C2C2;
+  --neutral-500: #959595;
+  --neutral-700: #6F6F6F;
+  --neutral-900: #484848;
+
+  /* cool grey */
+  --coolgrey-50: #F4F6F7;
+  --coolgrey-100: #DAE1E7;
+  --coolgrey-300: #B8C2CC;
+  --coolgrey-500: #8795A1;
+  --coolgrey-700: #606F7B;
+  --coolgrey-900: #3D4852;
+
+
+  /* warm grey */
+  --warmgrey-50: #FAF7F3;
+  --warmgrey-100: #E7E2DA;
+  --warmgrey-300: #CCC5B8;
+  --warmgrey-500: #A19887;
+  --warmgrey-700: #7B7260;
+  --warmgrey-900: #524B3D;
 }
 
-button:not(:disabled):active {
-	background-color: #ddd;
-}
 
-button:focus {
-	border-color: #666;
-}
+

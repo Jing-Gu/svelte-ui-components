@@ -1,4 +1,3 @@
-import App from './App.svelte';
 import Button from './Button.svelte'
 import Banner from './Banner.svelte'
 
